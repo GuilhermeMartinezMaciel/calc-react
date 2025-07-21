@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Button from './Button';
 import './App.css';
 
 function App() {
@@ -76,37 +77,38 @@ function App() {
               {displayValue}
             </div>
             <div className='calc-container'>
-             <button className='item' onClick={() => TrocarNumero('1')}>1</button>
-             <button className='item' onClick={() => TrocarNumero('2')}>2</button>
-             <button className='item' onClick={() => TrocarNumero('3')}>3</button>
+             <Button label="1" onClick={() => TrocarNumero('1')}></Button>
+             <Button label="2" onClick={() => TrocarNumero('2')}></Button>
+             <Button label="3" onClick={() => TrocarNumero('3')}></Button>
             
          
       </div>
 
       <div className='calc-container'>
           
-             <button className='item' onClick={() => TrocarNumero('4')}>4</button>
-             <button className='item' onClick={() => TrocarNumero('5')}>5</button>
-             <button className='item' onClick={() => TrocarNumero('6')}>6</button>
+             <Button label="4" onClick={() => TrocarNumero('4')}></Button>
+             <Button label="5" onClick={() => TrocarNumero('5')}></Button>
+             <Button label="6" onClick={() => TrocarNumero('6')}></Button>
           
       </div>
 
       <div className='calc-container'>
          
-            <button className='item' onClick={() => TrocarNumero('7')}>7</button>
-             <button className='item' onClick={() => TrocarNumero('8')}>8</button>
-             <button className='item' onClick={() => TrocarNumero('9')}>9</button>
+           <Button label="7" onClick={() => TrocarNumero('7')}></Button>
+             <Button label="8" onClick={() => TrocarNumero('8')}></Button>
+             <Button label="9" onClick={() => TrocarNumero('9')}></Button>
+              <Button label="0" onClick={() => TrocarNumero('0')}></Button>
 
       </div>
 
       <div className='calc-container'>
          
-            <button className='item' onClick={() => operacao('+')}>+</button>
-             <button className='item' onClick={() => operacao('-')}>-</button>
-             <button className='item' onClick={() => operacao('*')}>*</button>
-             <button className='item' onClick={() => operacao('%')}>%</button>
-             <button className='item' onClick={() => resultado()}>=</button>
-             <button className='item' onClick={() => clear()}>c</button>
+             <Button label="+" onClick={() => operacao('+')}></Button>
+              <Button label="-" onClick={() => operacao('-')}></Button>
+              <Button label="*" onClick={() => operacao('*')}></Button>
+             <Button label="%" onClick={() => operacao('%')}></Button>
+              <Button label="=" onClick={() => resultado('=')}></Button>
+              <Button label="c" onClick={() => clear('c')}></Button>
 
       </div>
     </main>
