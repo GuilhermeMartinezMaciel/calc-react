@@ -102,7 +102,7 @@ function App() {
       </div>
 
       <div className='calc-container'>
-         
+                                             
              <Button label="+" onClick={() => operacao('+')}></Button>
               <Button label="-" onClick={() => operacao('-')}></Button>
               <Button label="*" onClick={() => operacao('*')}></Button>
